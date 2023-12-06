@@ -16,17 +16,16 @@ export default function Home() {
         title={'Quper'}
         subtitle={'Privacy Policy Analyser'}
         description={
-          'A web-based privacy policy analyser that present users with a thorough analysis of a privacy policy by inputting a URL.  The user interface of this application is built using Next.js and Typescript, while the server-side of the application is developed using Python and Flask. This project is a part of a research under the supervision of Associate Professor Guangdong Bai at UQ'
+          'A web-based privacy policy analyser that present users with a thorough analysis of a privacy policy by inputting a URL.  The user interface of this application is built using Next.js and Typescript, while the server-side of the application is developed using Python and Flask. This project is a part of a research under the supervision of Associate Professor Guangdong Bai at UQ.'
         }
         video={null}
         images={['/Screenshot Quper.png']}
       />
-      <div className='w-5/6 h-0.5 bg-[#64748B] mx-auto my-4' />
       <Project
         title={'Just The Facts'}
         subtitle={'News Bias Minimiser'}
         description={
-          'Just The Facts is an initiative designed to combat bias in news reporting using the cpabilities of a large language model. It aims to purge emotionally charge language from news content, ensuring that readers are presented with comprehensive, unbiased fatcs. It enables users to make independent choices with minimal influence from publication biases'
+          'Just The Facts is an initiative designed to combat bias in news reporting using the capabilities of a large language model. It aims to purge emotionally charge language from news content, ensuring that readers are presented with comprehensive, unbiased facts. It enables users to make independent choices with minimal influence from publication biases'
         }
         video={'https://www.youtube.com/embed/mT5PTYNs8Bw?si=bSLBcH5c5uAkL_VQ'}
         images={null}
