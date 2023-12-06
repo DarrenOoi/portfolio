@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className='md:px-20 pt-16 pb-6 bg-base-200'>
+    <div className='px-4 md:px-16 pt-16 pb-6 bg-base-200'>
       <h1 className='text-xl md:text-4xl font-bold mb-4'>Contact</h1>
       <div className='flex flex-col md:flex-row mb-4'>
         <Link
@@ -19,7 +19,13 @@ const Footer = () => {
         >
           Email
         </Link>
-        <a className='btn btn-ghost md:text-xl'>Resume</a>
+        <Link
+          href='/resume'
+          target='_blank'
+          className='btn btn-ghost md:text-xl'
+        >
+          Resume
+        </Link>
         <Link
           href='https://github.com/DarrenOoi/'
           target='_blank'
