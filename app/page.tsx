@@ -15,10 +15,19 @@ export default function Home() {
         title={'Quper'}
         subtitle={'Privacy Policy Analyser'}
         description={
-          'A web-based privacy policy analyser that present users with a thorough analysis of a privacy policy by inputting a URL.  The user interface of this application is built using Next.js and Typescript, while the server-side of the application is developed using Python and Flask. This project is a part of a research under the supervision of Associate Professor Guangdong Bai at UQ.'
+          'A web-based privacy policy analyser that present users with a thorough analysis of a privacy policy by inputting a URL.  The user interface of this application is built using Next.js and Typescript, while the server-side of the application is developed using Python and Flask.'
         }
         video={null}
-        images={['/Screenshot Quper.png']}
+        images={['/q1.png', '/q2.png', '/q3.png', '/q4.png', '/q5.png']}
+      />
+      <Project
+        title={'Pigeon'}
+        subtitle={'E2EE Messaging App'}
+        description={
+          'A secure, end-to-end encrypted, real-time messaging web application. This application utilises web sockets to achieve two-way communication between the front end and the server. The front end was built with Next.js and TypeScript, while the back end was built using Python and Flask. Docker was used to containerise the application, and Terraform was used to automate deployment on AWS.'
+        }
+        video={null}
+        images={['/p1.png', '/p2.png', '/p3.png', '/p4.png', '/p5.png']}
       />
       <Project
         title={'Just The Facts'}
@@ -33,7 +42,7 @@ export default function Home() {
         title={'World Happiness Ranking'}
         subtitle={'World Happiness Data Visualiser'}
         description={
-          'This project is a web application that aims to provide users with a convenient way to view, analyse and visualise data from The World Happiness Report. With user authentication, data display, partial match search, and graphical representation features, the application offers a comprehensive and easy-to-use tool for exploring this information. The front-end is developed with React.js while the back-end is a Restful Express API that interacts with a MySQL. The API enables access to World Happiness Rankings data with filtering, authentication and profile management features. SwaggerUI is utilised for ease of understanding, interacting and testing the API.'
+          'A web application that aims to provide users with a convenient way to view, analyse and visualise data from The World Happiness Report. With user authentication, data display, partial match search, and graphical representation features, the application offers a comprehensive and easy-to-use tool for exploring this information. The front-end is developed with React.js while the back-end is a Restful Express API that interacts with a MySQL.'
         }
         video={null}
         // images='/whr2.png'
