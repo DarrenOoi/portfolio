@@ -7,9 +7,21 @@ import Footer from '@/components/Footer';
 export default function Home() {
   return (
     <div className='bg-white'>
-      <Navbar />
-      <Hero />
-      {/* <Carousel imageSources={['/Screenshot Quper.png', '/jtf.png']} /> */}
+      <div className='relative w-full h-screen'>
+        <video
+          className='absolute top-0 left-0 w-full h-full object-cover rotate-180 contrast-50'
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src='https://i.imgur.com/ySi24vG.mp4' type='video/mp4' />
+        </video>
+        <div className='relative z-10'>
+          <Navbar />
+          <Hero />
+        </div>
+      </div>
       <div className='w-5/6 h-0.5 mx-auto my-4' />
       <Project
         title={'Quper'}

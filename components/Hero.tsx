@@ -1,14 +1,14 @@
 'use client';
 import { Typewriter } from 'react-simple-typewriter';
+import { useEffect, useState } from 'react';
 
 const Hero = () => {
   return (
-    <div className='hero h-screen bg-base-200 rounded-3xl'>
+    <div className='hero h-screen rounded-3xl text-white'>
       <div className='hero-content w-5/6 flex-col lg:flex-row-reverse'>
-        {/* <img src='/linkedin.jpg' className='max-w-xs roundedcd shadow-2xl' /> */}
         <div>
-          <h1 className='text-5xl font-bold'>Welcome.</h1>
-          <div className='py-6 text-xl'>
+          <h1 className='text-5xl font-bold text-[#013220]'>Welcome.</h1>
+          <div className='py-6 text-xl mt-44'>
             <p>
               I'm Darren Ooi, a Software Engineering Student living in Brisbane,
               QLD, Australia. I am passionate about crafting web applications

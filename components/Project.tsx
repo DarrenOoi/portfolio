@@ -22,7 +22,7 @@ const Project = ({
   images,
 }: projectProps) => {
   return (
-    <div className='flex flex-col px-4 md:px-44 pb-2 bg-white'>
+    <div className='flex flex-col px-4 md:px-44 pb-2'>
       <h1 className='text-5xl mb-2 font-bold'>{title}</h1>
       <p className='text-xl text-[#7895B1]'>{subtitle}</p>
       <p className='text-m mt-2 mb-4'>{description}</p>
