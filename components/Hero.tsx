@@ -10,9 +10,9 @@ const Hero = () => {
           <h1 className='text-5xl font-bold text-[#013220]'>Welcome.</h1>
           <div className='py-6 text-xl mt-44'>
             <p>
-              I'm Darren Ooi, a Software Engineering Student living in Brisbane,
-              QLD, Australia. I am passionate about crafting web applications
-              with{' '}
+              I'm Darren Ooi, a Software Engineering Graduate living in
+              Brisbane, QLD, Australia. I am passionate about crafting web
+              applications with{' '}
               <span className='font-bold text-[#22C55E]'>
                 <Typewriter
                   words={[
@@ -23,8 +23,8 @@ const Hero = () => {
                   loop={0}
                   cursor
                   cursorStyle='_'
-                  typeSpeed={70}
-                  deleteSpeed={70}
+                  typeSpeed={50}
+                  deleteSpeed={50}
                   delaySpeed={1000}
                 />
               </span>
