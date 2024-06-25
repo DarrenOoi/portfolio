@@ -4,7 +4,7 @@ const Navbar = () => {
       <div className='flex-1'>
         <a className='btn btn-ghost text-xl'>Darren Ooi</a>
       </div>
-      <div className='flex-none'>
+      {/* <div className='flex-none'>
         <button className='btn btn-square btn-ghost'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -20,7 +20,7 @@ const Navbar = () => {
             ></path>
           </svg>
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

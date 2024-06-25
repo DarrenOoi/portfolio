@@ -73,7 +73,7 @@ const Project = ({
       )}
       <p className='text-m mt-2 mb-4'>{description}</p>
 
-      <div className='flex justify-center py-10 bg-[#F5F5DC] mb-10 rounded-xl'>
+      <div className='flex justify-center py-10 bg-[#E5E4E2] mb-10 rounded-xl'>
         {video ? (
           <iframe
             className='rounded'
