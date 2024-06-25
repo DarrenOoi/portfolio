@@ -1,3 +1,4 @@
+'use client';
 interface projectProps {
   title: String;
   subtitle: String;
@@ -13,6 +14,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
+import { useScreenSize } from '@/hooks/useScreenSize';
 
 const Project = ({
   title,
@@ -22,6 +24,8 @@ const Project = ({
   images,
   icons,
 }: projectProps) => {
+  const { screenSize } = useScreenSize();
+
   const techStack = {
     'nextjs-plain': { name: 'Next.js', link: 'https://nextjs.org/' },
     'flask-original': {
@@ -69,7 +73,7 @@ const Project = ({
       )}
       <p className='text-m mt-2 mb-4'>{description}</p>
 
-      <div className='flex justify-center py-10 bg-base-200 mb-10'>
+      <div className='flex justify-center py-10 bg-[#F5F5DC] mb-10 rounded-xl'>
         {video ? (
           <iframe
             className='rounded'
@@ -95,7 +99,12 @@ const Project = ({
                 ))}
               </CarouselContent>
               <CarouselPrevious />
-              <CarouselNext />
+              {screenSize === 'md' ||
+              screenSize === 'lg' ||
+              screenSize === 'xl' ||
+              screenSize === '2xl' ? (
+                <CarouselNext />
+              ) : null}
             </Carousel>
           )
         )}
