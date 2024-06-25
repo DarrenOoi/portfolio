@@ -54,8 +54,7 @@ const Project = ({
   return (
     <div className='flex flex-col px-4 md:px-44 pb-2'>
       <h1 className='text-5xl mb-2 font-bold'>{title}</h1>
-      <p className='text-xl text-[#7895B1]'>{subtitle}</p>
-      <p className='text-m mt-2 mb-4'>{description}</p>
+      <p className='text-xl text-[#7895B1] mb-2'>{subtitle}</p>
       {icons && (
         <div className='flex flex-row mb-4'>
           {icons?.map((icon, index) => {
@@ -68,6 +67,7 @@ const Project = ({
           })}
         </div>
       )}
+      <p className='text-m mt-2 mb-4'>{description}</p>
 
       <div className='flex justify-center py-10 bg-base-200 mb-10'>
         {video ? (
