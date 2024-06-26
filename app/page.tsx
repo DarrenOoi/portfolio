@@ -16,12 +16,14 @@ export default function Home() {
           playsInline
         >
           <source src='https://i.imgur.com/ySi24vG.mp4' type='video/mp4' />
+          Your browser does not support the video tag.
         </video>
         <div className='relative z-10'>
           <Navbar />
           <Hero />
         </div>
       </div>
+
       <div className='w-5/6 h-0.5 mx-auto my-4' />
       <Project
         title={'Quper'}

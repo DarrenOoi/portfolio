@@ -15,6 +15,7 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import { useScreenSize } from '@/hooks/useScreenSize';
+import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
 
 const Project = ({
   title,
@@ -65,7 +66,10 @@ const Project = ({
             const tech = techStack[icon as keyof typeof techStack];
             return (
               <a href={tech.link} key={index} title={tech.name} target='_blank'>
-                <i key={index} className={`devicon-${icon} text-3xl mr-2`}></i>
+                <i
+                  key={index}
+                  className={`devicon-${icon} opacity-75 text-3xl mr-2 hover:text-blue-800`}
+                ></i>
               </a>
             );
           })}
@@ -85,27 +89,44 @@ const Project = ({
           ></iframe>
         ) : (
           images && (
-            // images && <Carousel imageSources={images} />
-            <Carousel className='w-full md:w-4/6 flex justify-center items-center rounded-lg shadow-2xl'>
-              <CarouselContent>
+            <ScrollArea className='w-full rounded-md border'>
+              <div className='flex space-x-4 p-4'>
                 {images.map((src, index) => (
-                  <CarouselItem key={index}>
-                    <img
-                      src={src}
-                      alt={`Carousel slide ${index}`}
-                      className='w-full h-full'
-                    />
-                  </CarouselItem>
+                  <figure key={index} className='shrink-0'>
+                    <div className='overflow-hidden rounded-md '>
+                      <img
+                        src={src}
+                        // alt={`Photo by ${artwork.artist}`}
+                        //style below is critical for shrinking the images proportionately
+                        className='max-w-xs md:max-w-3xl max-h-36 md:max-h-80 object-contain'
+                      />
+                    </div>
+                  </figure>
                 ))}
-              </CarouselContent>
-              <CarouselPrevious />
-              {screenSize === 'md' ||
-              screenSize === 'lg' ||
-              screenSize === 'xl' ||
-              screenSize === '2xl' ? (
-                <CarouselNext />
-              ) : null}
-            </Carousel>
+              </div>
+              <ScrollBar orientation='horizontal' />
+            </ScrollArea>
+
+            // <Carousel className='w-full md:w-4/6 flex justify-center items-center rounded-lg shadow-2xl'>
+            //   <CarouselContent>
+            //     {images.map((src, index) => (
+            //       <CarouselItem key={index}>
+            //         <img
+            //           src={src}
+            //           alt={`Carousel slide ${index}`}
+            //           className='w-full h-full'
+            //         />
+            //       </CarouselItem>
+            //     ))}
+            //   </CarouselContent>
+            //   <CarouselPrevious />
+            //   {screenSize === 'md' ||
+            //   screenSize === 'lg' ||
+            //   screenSize === 'xl' ||
+            //   screenSize === '2xl' ? (
+            //     <CarouselNext />
+            //   ) : null}
+            // </Carousel>
           )
         )}
       </div>

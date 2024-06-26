@@ -7,8 +7,8 @@ const Hero = () => {
     <div className='hero h-screen rounded-3xl text-white'>
       <div className='hero-content w-5/6 flex-col lg:flex-row-reverse'>
         <div>
-          <h1 className='text-5xl font-bold text-[#013220]'>Welcome.</h1>
-          <div className='py-6 text-xl mt-44'>
+          <h1 className='text-5xl font-bold text-[#FFFED3]'>Welcome.</h1>
+          <div className='py-6 text-xl mt-44 text-[#FFFED3]'>
             <p>
               I'm Darren Ooi, a Software Engineering Graduate living in
               Brisbane, QLD, Australia. I am passionate about crafting web
@@ -31,7 +31,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <p className='py-6 text-xl'>
+          <p className='py-6 text-xl text-[#FFFED3]'>
             View a collection of my projects below ⬇️
           </p>
         </div>
