@@ -1,10 +1,16 @@
 'use client';
+
+interface image {
+  src: string;
+  caption: string;
+}
+
 interface projectProps {
   title: String;
   subtitle: String;
   description: String;
   video: string | null;
-  images: string[] | null;
+  images: image[] | null;
   icons: string[] | null;
 }
 import {
@@ -91,16 +97,19 @@ const Project = ({
           images && (
             <ScrollArea className='w-full rounded-md border'>
               <div className='flex space-x-4 p-4'>
-                {images.map((src, index) => (
+                {images.map((image, index) => (
                   <figure key={index} className='shrink-0'>
                     <div className='overflow-hidden rounded-md '>
                       <img
-                        src={src}
+                        src={image.src}
                         // alt={`Photo by ${artwork.artist}`}
                         //style below is critical for shrinking the images proportionately
                         className='max-w-xs md:max-w-3xl max-h-36 md:max-h-80 object-contain'
                       />
                     </div>
+                    <figcaption className='pt-2 text-xs text-muted-foreground'>
+                      {image.caption}
+                    </figcaption>
                   </figure>
                 ))}
               </div>

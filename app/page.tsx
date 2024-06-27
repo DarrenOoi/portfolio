@@ -32,7 +32,13 @@ export default function Home() {
           'QuPer is a web application designed to safeguard user privacy in the ever-evolving domain of Virtual Personal Assistants (VPAs). It provides a platform for assessing the privacy policies of VPA apps, aiming to eliminate uncertainty surrounding these policies and empower users with the knowledge needed to make informed decisions. QuPer offers an overview of the quality of inputted privacy policies based on four key metrics: Completeness, Readability, Availability, and Timeliness.'
         }
         video={null}
-        images={['/q1.png', '/q2.png', '/q3.png', '/q4.png', '/q5.png']}
+        images={[
+          { src: '/q1.png', caption: 'Landing Page' },
+          { src: '/q2.png', caption: 'Completeness' },
+          { src: '/q3.png', caption: 'Readability' },
+          { src: '/q4.png', caption: 'Availability' },
+          { src: '/q5.png', caption: 'Timeliness' },
+        ]}
         icons={[
           'nextjs-plain',
           'flask-original',
@@ -47,7 +53,13 @@ export default function Home() {
           'A secure, end-to-end encrypted, real-time messaging web application for your secret communications. This application utilises web sockets to achieve two-way communication between the front end and the server. It supports addition of contacts, one-on-one chat, multimedia messages and viewing of chat history. Docker was used to containerise the application, and Terraform was used to automate deployment on AWS.'
         }
         video={null}
-        images={['/p1.png', '/p2.png', '/p3.png', '/p4.png', '/p5.png']}
+        images={[
+          { src: '/p1.png', caption: 'Login' },
+          { src: '/p2.png', caption: 'Send Request' },
+          { src: '/p3.png', caption: 'Handle Request' },
+          { src: '/p4.png', caption: 'Encrypt/Decrypt' },
+          { src: '/p5.png', caption: 'Chat' },
+        ]}
         icons={[
           'nextjs-plain',
           'flask-original',
@@ -81,8 +93,18 @@ export default function Home() {
         }
         video={null}
         // images='/whr2.png'
-        images={['/whr1.png', '/whr2.png', '/whr3.png', '/whr4.png']}
-        icons={['react-plain', 'express-original', 'mysql-plain']}
+        images={[
+          { src: '/whr1.png', caption: 'Landing Page' },
+          { src: '/whr2.png', caption: 'Ranking Table' },
+          { src: '/whr3.png', caption: 'Ranking Trend Graph' },
+          { src: '/whr4.png', caption: 'API Routes' },
+        ]}
+        icons={[
+          'react-plain',
+          'javascript-plain',
+          'express-original',
+          'mysql-plain',
+        ]}
       />
       {/* <div className='w-5/6 h-0.5 bg-[#64748B] mx-auto mt-4' /> */}
       <Footer />
