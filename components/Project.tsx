@@ -104,7 +104,7 @@ const Project = ({
                         src={image.src}
                         // alt={`Photo by ${artwork.artist}`}
                         //style below is critical for shrinking the images proportionately
-                        className='max-w-xs md:max-w-3xl max-h-36 md:max-h-80 object-contain'
+                        className='max-w-xl md:max-w-4xl max-h-40 md:max-h-96 object-contain'
                       />
                     </div>
                     <figcaption className='pt-2 text-xs text-muted-foreground'>

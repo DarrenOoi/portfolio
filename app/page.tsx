@@ -50,7 +50,7 @@ export default function Home() {
         title={'Pigeon'}
         subtitle={'E2EE Messaging App'}
         description={
-          'A secure, end-to-end encrypted, real-time messaging web application for your secret communications. This application utilises web sockets to achieve two-way communication between the front end and the server. It supports addition of contacts, one-on-one chat, multimedia messages and viewing of chat history. Docker was used to containerise the application, and Terraform was used to automate deployment on AWS.'
+          'A secure, end-to-end encrypted, real-time messaging web application for your secret communications. This application utilises web sockets to achieve two-way communication between the front end and the server. It supports addition of contacts, one-on-one chat, multimedia messages and viewing of chat history. Docker was used to containerise the application, and Terraform was used to automate deployment on AWS. This project is a MVP developed in a week.'
         }
         video={null}
         images={[
