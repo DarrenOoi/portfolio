@@ -64,8 +64,8 @@ const Project = ({
 
   return (
     <div className='flex flex-col px-4 md:px-44 pb-2'>
-      <h1 className='text-5xl mb-2 font-bold'>{title}</h1>
-      <p className='text-xl text-[#7895B1] mb-2'>{subtitle}</p>
+      <h1 className='text-5xl mb-2 font-bold text-[#0B3C49]'>{title}</h1>
+      <p className='text-xl text-[#638889] mb-2'>{subtitle}</p>
       {icons && (
         <div className='flex flex-row mb-4'>
           {icons?.map((icon, index) => {
@@ -74,14 +74,14 @@ const Project = ({
               <a href={tech.link} key={index} title={tech.name} target='_blank'>
                 <i
                   key={index}
-                  className={`devicon-${icon} opacity-75 text-3xl mr-2 hover:text-blue-800`}
+                  className={`devicon-${icon} opacity-75 text-3xl mr-2 hover:text-[#9DBC98]`}
                 ></i>
               </a>
             );
           })}
         </div>
       )}
-      <p className='text-m mt-2 mb-4'>{description}</p>
+      <p className='text-m mt-2 mb-4 text-[#0B3C49]'>{description}</p>
 
       <div className='flex justify-center py-10 bg-[#E5E4E2] mb-10 rounded-xl'>
         {video ? (
@@ -139,7 +139,7 @@ const Project = ({
           )
         )}
       </div>
-      <div className='w-5/6 h-0.5 bg-[#64748B] mx-auto mb-4' />
+      <div className='w-5/6 h-0.5 bg-[#638889] mx-auto mb-4' />
     </div>
   );
 };

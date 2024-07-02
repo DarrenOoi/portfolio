@@ -12,7 +12,7 @@ const Hero = () => {
               I'm Darren Ooi, a Software Engineering Graduate living in
               Brisbane, QLD, Australia. I am passionate about crafting web
               applications with{' '}
-              <span className='font-bold text-[#22C55E]'>
+              <span className='font-bold text-[#9DBC98]'>
                 <Typewriter
                   words={[
                     'rich functionalities.',
