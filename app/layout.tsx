@@ -24,6 +24,10 @@ export default function RootLayout({
           type='text/css'
           href='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css'
         />
+        <meta
+          name='google-site-verification'
+          content='zPxGoq9mJ5ZtmoxgLnJj2eZGEJKC4JDVQ4hC36yFvmw'
+        />
       </head>
       <body className={merri.className}>{children}</body>
     </html>
