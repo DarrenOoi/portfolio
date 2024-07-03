@@ -6,13 +6,13 @@ const Hero = () => {
     <div className='hero h-screen rounded-3xl text-white'>
       <div className='hero-content w-5/6 flex-col lg:flex-row-reverse'>
         <div>
-          <h1 className='text-5xl font-bold text-[#FFFED3]'>Welcome.</h1>
-          <div className='mt-52 mb-16 text-xl text-[#FFFED3] h-28'>
+          <h1 className='text-5xl font-bold '>Welcome.</h1>
+          <div className='mt-52 mb-16 text-xl h-28'>
             <p>
               I'm Darren Ooi, a Software Engineering Graduate living in
               Brisbane, QLD, Australia. I am passionate about crafting web
               applications with{' '}
-              <span className='font-bold text-[#9DBC98]'>
+              <span className='font-bold text-[#63C132]'>
                 <Typewriter
                   words={[
                     'rich functionalities.',
@@ -30,7 +30,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <p className='text-xl text-[#FFFED3]'>
+          <p className='text-xl text-white'>
             View a collection of my projects below ⬇️
           </p>
         </div>

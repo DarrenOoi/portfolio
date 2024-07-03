@@ -2,7 +2,7 @@ const Navbar = () => {
   return (
     <div className='navbar bg-white'>
       <div className='flex-1'>
-        <a className='btn btn-ghost text-xl text-[#0B3C49]'>Darren Ooi</a>
+        <a className='btn btn-ghost text-xl'>Darren Ooi</a>
       </div>
       {/* <div className='flex-none'>
         <button className='btn btn-square btn-ghost'>

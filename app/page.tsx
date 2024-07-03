@@ -9,7 +9,7 @@ export default function Home() {
     <div className='bg-white'>
       <div className='relative w-full h-screen'>
         <video
-          className='absolute top-0 left-0 w-full h-full object-cover rotate-180 contrast-50'
+          className='absolute top-0 left-0 w-full h-full object-cover rotate-180 contrast-50 brightness-75'
           autoPlay
           loop
           muted
@@ -50,7 +50,7 @@ export default function Home() {
         title={'Pigeon'}
         subtitle={'E2EE Messaging App'}
         description={
-          'A secure, end-to-end encrypted, real-time messaging web application for your secret communications. This application utilises web sockets to achieve two-way communication between the front end and the server. It supports addition of contacts, one-on-one chat, multimedia messages and viewing of chat history. Docker was used to containerise the application, and Terraform was used to automate deployment on AWS. This project is a MVP developed in a week.'
+          'A secure, end-to-end encrypted, real-time messaging web application for your secret communications. This application utilises WebSockets to achieve two-way communication between the front end and the server. It supports adding contacts, one-on-one chat, multimedia messages, and viewing chat history. Docker was used to containerise the application, and Terraform was used to automate deployment on AWS. This project is a group project MVP developed in a week.'
         }
         video={null}
         images={[
@@ -74,7 +74,7 @@ export default function Home() {
         title={'Just The Facts'}
         subtitle={'News Bias Minimiser'}
         description={
-          'Just The Facts is an initiative designed to combat bias in news reporting using the capabilities of a large language model. It aims to purge emotionally charge language from news content, ensuring that readers are presented with comprehensive, unbiased facts. It enables users to make independent choices with minimal influence from publication biases.'
+          'Just The Facts is an initiative designed to combat bias in news reporting using the capabilities of a large language model. It aims to purge emotionally charge language from news content, ensuring that readers are presented with comprehensive, unbiased facts. It enables users to make independent choices with minimal influence from publication biases. This project is a collaborative group effort.'
         }
         video={'https://www.youtube.com/embed/mT5PTYNs8Bw?si=bSLBcH5c5uAkL_VQ'}
         images={null}
