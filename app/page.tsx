@@ -33,7 +33,7 @@ export default function Home() {
         }
         video={null}
         images={[
-          { src: '/q1.png', caption: 'Landing Page' },
+          { src: '/q1.png', caption: 'Home Page' },
           { src: '/q2.png', caption: 'Completeness' },
           { src: '/q3.png', caption: 'Readability' },
           { src: '/q4.png', caption: 'Availability' },
@@ -94,7 +94,7 @@ export default function Home() {
         video={null}
         // images='/whr2.png'
         images={[
-          { src: '/whr1.png', caption: 'Landing Page' },
+          { src: '/whr1.png', caption: 'Home Page' },
           { src: '/whr2.png', caption: 'Ranking Table' },
           { src: '/whr3.png', caption: 'Ranking Trend Graph' },
           { src: '/whr4.png', caption: 'API Routes' },
